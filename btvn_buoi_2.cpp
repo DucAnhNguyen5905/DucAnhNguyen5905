@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std; 
+
 /*
 // Bai 11
 int main() {
@@ -34,8 +35,100 @@ int main() {
 	}
 */	
 
-// Bai 8
+/*
+//Bai 8
+int main() {
+    int so_phan_tu;
+    cout << "Nhap so phan tu cua mang: " << endl;
+    cin >> so_phan_tu;
 
+    int mang[so_phan_tu];
+    cout << "Nhap " << so_phan_tu << " phan tu cua mang: " << endl;
+    for (int i = 0; i < so_phan_tu; i++) {
+        cout << "Nhap gia tri thu " << i + 1 << ": ";
+        cin >> mang[i];
+    }
+    for (int i = 0; i < so_phan_tu; i++) {
+        if (mang[i] % 2 == 0) {
+            cout << "so chan" << endl;
+        } else {
+            cout << "so le" << endl;
+        }
+    }
+    return 0;
+}
+*/
+
+
+// Bai 9
+int main() {
+    int mang[5] = {4,2,5,1,3};
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = i + 1; j < 5; j++) {
+            if (mang[i] > mang[j]) {
+                int temp = mang[i];
+                mang[i] = mang[j];
+                mang[j] = temp;
+            }
+        }
+    }
+
+ 
+   cout << "Mang sau khi sap xep theo thu tu tang dan: ";
+    for (int i = 0; i < 5; i++) {
+    cout << mang[i] << " ";
+    }
+    cout << std::endl;
+    
+    for (int i = 0; i < 5; i++) {
+        for (int j = i + 1; j < 5; j++) {
+            if (mang[i] < mang[j]) {
+                int temp = mang[i];
+                mang[i] = mang[j];
+                mang[j] = temp;
+            }
+        }
+    }
+        cout << "Mang sau khi sap xep theo thu tu giam dan: ";
+    for (int i = 0; i < 5; i++) {
+        std::cout << mang[i] << " ";
+    }
+    
+
+    return 0;
+}
+
+/*	
+// Bai 12
+int main() {
+    int so_phan_tu;
+    cout << "Nhap so phan tu cua mang: " << endl;
+    cin >> so_phan_tu;
+
+    int mang[so_phan_tu];
+    cout << "Nhap " << so_phan_tu << " phan tu cua mang: " << endl;
+    for (int i = 0; i < so_phan_tu; i++) {
+        cout << "Nhap gia tri thu " << i + 1 << ": ";
+        cin >> mang[i];
+    }
+    int sum_so_le = 0;
+    for (int i = 0; i < so_phan_tu; i++) {
+        if (mang[i] % 2 != 0) {
+			sum_so_le += mang[i];
+        }
+        }
+        cout << " Tong cac so le bang: " << sum_so_le << endl;
+        
+    
+    return 0;
+}		
+*/
+
+
+    
+
+    
 					
 			
         
