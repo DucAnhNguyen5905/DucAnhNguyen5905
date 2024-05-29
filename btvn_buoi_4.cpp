@@ -44,7 +44,7 @@ int main() {
   	return 0;
 }
 */
-
+/*
 // Bai 15
 void thay_doi_gia_tri(int *mang, int phan_tu_can_thay_doi, int gia_tri_moi) {
     mang[phan_tu_can_thay_doi] = gia_tri_moi;
@@ -63,4 +63,4 @@ int main() {
 
     return 0;
 }
-
+*/
