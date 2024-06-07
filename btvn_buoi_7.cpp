@@ -68,6 +68,6 @@ int main() {
 	phan_so ps;
 	nhap (ps);
 	hien_thi (ps);
-	
+	tinh_tong (ps);
 	return 0;
 	}
