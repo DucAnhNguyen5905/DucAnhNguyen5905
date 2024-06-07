@@ -3,7 +3,7 @@
 #include <iomanip>
 
 using namespace std;
-
+/*
 struct sinh_vien {
     string name;
     int ID;
@@ -42,4 +42,29 @@ int main() {
 
     return 0;
 }
+*/
+struct phan_so {
+	long tu_so;
+	long mau_so;
+	};
 
+void nhap(phan_so &he_so) {
+	cout << "Nhap tu so va mau so: " << endl;
+	cin >> he_so.tu_so >> he_so.mau_so;
+	while (he_so.mau_so == 0) {
+		cout << "Mau so phai khac 0, hay nhap lai: " << endl;
+		cin >> he_so.mau_so;
+	}
+	}
+void hien_thi(const phan_so &he_so) {
+	cout << "Phan so cua ban la: ";
+	cout << he_so.tu_so << "/" << he_so.mau_so << endl;
+	}
+
+int main() {
+	phan_so ps;
+	nhap (ps);
+	hien_thi (ps);
+	
+	return 0;
+	}
