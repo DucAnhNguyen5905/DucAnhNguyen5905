@@ -60,7 +60,10 @@ void hien_thi(const phan_so &he_so) {
 	cout << "Phan so cua ban la: ";
 	cout << he_so.tu_so << "/" << he_so.mau_so << endl;
 	}
-
+void tinh_tong(const phan_so &he_so) {
+	cout << "Tong hai phan so cua ban la: " << endl;
+	cout << (he_so.tu_so1 * he_so.mau_so2 + he_so.tu_so2 * he_so.mau_so1) << "/" << (he_so.mau_so1 * he_so.mau_so2);
+	}
 int main() {
 	phan_so ps;
 	nhap (ps);
